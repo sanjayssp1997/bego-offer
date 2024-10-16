@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "814421bd-1a49-4eb4-a0c7-e2d8c2b35b06",
+		"name": "bego-offer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38018558"
+	},
+	"item": [
+		{
+			"name": "get offer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzUxMiIsInR5cGUiOiJqd3QifQ.eyJpc3MiOiJ3d3cuVEhSRUFEUmVzZWFyY2guY29tIiwiaWF0IjoxNzI1MDA0Mjc3LCJpZCI6IjRlMDA0MzU0LTU1NjUtNDM0My05ZDUzLWZlM2NkYzUwNWMyMyIsInVzZXJuYW1lIjoic25pZ2RoYS5qZW5hK3N1cHBvcnRAdGhyZWFkcmVzZWFyY2guY29tIiwibmFtZSI6IlNuaWdkaGEiLCJwaG9uZU51bWJlciI6IiIsInVzZXJSb2xlIjoiU3VwcG9ydCIsImZpcnN0TmFtZSI6IlNuaWdkaGEiLCJsYXN0TmFtZSI6IkplbmEiLCJ3b3JrTnVtYmVyIjoiIiwic3RhdHVzIjoiQWN0aXZlIiwicHJvZmlsZUNvbXBsZXRlZCI6dHJ1ZSwib3RwVmVyaWZpZWQiOnRydWUsIm9uQm9hcmRpbmciOmZhbHNlLCJzdHVkaWVzIjpbXSwibGljZW5zZVR5cGUiOiJTcG9uc29yIiwiYmxpbmRlZCI6ZmFsc2UsInJlYWRPbmx5IjpmYWxzZSwiYWN0aXZpdHlMaWJyYXJ5QWxsb3dlZCI6ZmFsc2UsImNsaWVudElkIjoiNjU0MTk2IiwicmVzdHJpY3Rpb25zIjoiIiwiYWxsb3dlZFN0dWRpZXMiOltdLCJzeXN0ZW1BZG1pbiI6ZmFsc2UsImNyZWF0ZWQiOjE3MjUwMDQyNzczMzEsInNlc3Npb25Ub2tlbklkIjoiZTM2NTRlY2QtYjcyYS00NjliLTlkYjQtYWZhZTRhNDBiYWY5IiwiY291bnRyaWVzIjpbXSwiZXhwIjoxNzI1MDE4Njc3fQ.b_t_AOrBfmVPi2bic8gMB4f1mByudOOb0WpJjH30SjMXEj5s3t-KUp3vCtjROhfyv_UWzn5GVYVBUwW_fd4YYQ"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "clientid",
+						"value": "654196"
+					},
+					{
+						"key": "origin",
+						"value": "https://sanofi.platform.threadresearch.com"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://sanofi.platform.threadresearch.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-datadog-origin",
+						"value": "rum"
+					},
+					{
+						"key": "x-datadog-parent-id",
+						"value": "3778151500795194516"
+					},
+					{
+						"key": "x-datadog-sampling-priority",
+						"value": "1"
+					},
+					{
+						"key": "x-datadog-trace-id",
+						"value": "5572442000630701298"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"priceList\" :[10, 20, 30, 40, 50, 60] }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/get-discount-and-payable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"get-discount-and-payable"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "ac621b06-a374-44ea-b162-b8e19c",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://ecs-us-east-1.prod.threadresearch.com/api/v1/responsemanagement/query-tool/participant/399ae0d8-35df-4774-a859-a361f63773c1/tasks/pagination?studyId=7c806f78-0b96-49c1-a392-6afe918c8412&participantCurrentDay=165&status=ACTIVE&startDay=137&endDay=150&milestoneId=557ef2cb-6d74-4d14-abb2-a7e62d5fc40c&showCompletedTasks=false' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: eyJhbGciOiJIUzUxMiIsInR5cGUiOiJqd3QifQ.eyJpc3MiOiJ3d3cuVEhSRUFEUmVzZWFyY2guY29tIiwiaWF0IjoxNzI1MDA0Mjc3LCJpZCI6IjRlMDA0MzU0LTU1NjUtNDM0My05ZDUzLWZlM2NkYzUwNWMyMyIsInVzZXJuYW1lIjoic25pZ2RoYS5qZW5hK3N1cHBvcnRAdGhyZWFkcmVzZWFyY2guY29tIiwibmFtZSI6IlNuaWdkaGEiLCJwaG9uZU51bWJlciI6IiIsInVzZXJSb2xlIjoiU3VwcG9ydCIsImZpcnN0TmFtZSI6IlNuaWdkaGEiLCJsYXN0TmFtZSI6IkplbmEiLCJ3b3JrTnVtYmVyIjoiIiwic3RhdHVzIjoiQWN0aXZlIiwicHJvZmlsZUNvbXBsZXRlZCI6dHJ1ZSwib3RwVmVyaWZpZWQiOnRydWUsIm9uQm9hcmRpbmciOmZhbHNlLCJzdHVkaWVzIjpbXSwibGljZW5zZVR5cGUiOiJTcG9uc29yIiwiYmxpbmRlZCI6ZmFsc2UsInJlYWRPbmx5IjpmYWxzZSwiYWN0aXZpdHlMaWJyYXJ5QWxsb3dlZCI6ZmFsc2UsImNsaWVudElkIjoiNjU0MTk2IiwicmVzdHJpY3Rpb25zIjoiIiwiYWxsb3dlZFN0dWRpZXMiOltdLCJzeXN0ZW1BZG1pbiI6ZmFsc2UsImNyZWF0ZWQiOjE3MjUwMDQyNzczMzEsInNlc3Npb25Ub2tlbklkIjoiZTM2NTRlY2QtYjcyYS00NjliLTlkYjQtYWZhZTRhNDBiYWY5IiwiY291bnRyaWVzIjpbXSwiZXhwIjoxNzI1MDE4Njc3fQ.b_t_AOrBfmVPi2bic8gMB4f1mByudOOb0WpJjH30SjMXEj5s3t-KUp3vCtjROhfyv_UWzn5GVYVBUwW_fd4YYQ' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'clientid: 654196' \\\r\n  -H 'origin: https://sanofi.platform.threadresearch.com' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://sanofi.platform.threadresearch.com/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-site' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \\\r\n  -H 'x-datadog-origin: rum' \\\r\n  -H 'x-datadog-parent-id: 3778151500795194516' \\\r\n  -H 'x-datadog-sampling-priority: 1' \\\r\n  -H 'x-datadog-trace-id: 5572442000630701298'"
+			},
+			"response": []
+		}
+	]
+}
